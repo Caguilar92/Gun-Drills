@@ -1,11 +1,8 @@
 package com.gundrills.view_models
 
-import android.os.DeadObjectException
-import android.os.SystemClock
-import androidx.lifecycle.*
-import java.util.*
-import kotlin.collections.ArrayList
-import kotlin.math.sign
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import kotlin.random.Random
 
 class TimerViewModel(deflection: Int, charge: Int, elevation: Int, refer: Int, changButtonText: String,largeIsSelected:Boolean,smallIsSelected:Boolean) : ViewModel() {

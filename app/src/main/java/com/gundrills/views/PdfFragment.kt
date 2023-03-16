@@ -1,19 +1,17 @@
 package com.gundrills.views
 
-import android.icu.text.ListFormatter.Width
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.github.barteksc.pdfviewer.PDFView
 import com.github.barteksc.pdfviewer.scroll.DefaultScrollHandle
 import com.github.barteksc.pdfviewer.util.FitPolicy
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.gundrills.MainActivity
 import com.gundrills.R
-
 
 
 class PdfFragment : Fragment() {

@@ -1,26 +1,16 @@
 package com.gundrills
 
 
-import android.content.res.Configuration
 import android.os.Bundle
-import android.view.View
-import android.widget.Toast
-
-
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import androidx.core.view.get
-
-
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
-
 
 
 class MainActivity : AppCompatActivity() {

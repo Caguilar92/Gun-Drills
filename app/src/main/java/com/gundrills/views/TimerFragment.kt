@@ -1,18 +1,17 @@
 package com.gundrills.views
 
-import android.content.res.Configuration
 import android.os.Bundle
 import android.os.SystemClock
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.*
-import androidx.appcompat.app.AppCompatActivity
+import android.widget.Button
+import android.widget.Chronometer
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.widget.SwitchCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.google.android.material.snackbar.Snackbar
-import com.gundrills.MainActivity
 import com.gundrills.R
 import com.gundrills.factory.TimerViewModelFactory
 import com.gundrills.view_models.TimerViewModel

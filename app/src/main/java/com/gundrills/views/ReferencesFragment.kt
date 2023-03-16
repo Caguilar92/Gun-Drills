@@ -1,17 +1,13 @@
 package com.gundrills.views
+
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.cardview.widget.CardView
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
-import com.github.barteksc.pdfviewer.PDFView
-import com.gundrills.MainActivity
-
 import com.gundrills.R
-
 
 
 class ReferencesFragment : Fragment(),View.OnClickListener {
