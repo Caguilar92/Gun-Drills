@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Stop Watch"
+          android:id="@+id/timerFragment"
+          android:icon="@drawable/ic_baseline_access_time_24"/>
+
+    <item android:title="DATA"
+        android:id="@+id/statsFragment"
+        android:icon="@drawable/outline_query_stats_24"/>
+
+    <item android:title="Study"
+          android:id="@+id/studyFragment"
+          android:icon="@drawable/ic_baseline_menu_book_24"/>
+
+    <item android:title="References"
+          android:id="@+id/referencesFragment"
+          android:icon="@drawable/ic_baseline_picture_as_pdf_24"/>
+
+
+</menu>

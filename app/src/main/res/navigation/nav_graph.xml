@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/timerFragment">
+
+    <fragment
+        android:id="@+id/timerFragment"
+        android:name="com.gundrills.views.TimerFragment"
+        android:label="Stop Watch"
+        tools:layout="@layout/fragment_timer" />
+    <fragment
+        android:id="@+id/studyFragment"
+        android:name="com.gundrills.views.StudyFragment"
+        android:label="Study"
+        tools:layout="@layout/fragment_study" >
+
+
+        <action
+            android:id="@+id/action_studyFragment_to_studyQuizCardFragment"
+            app:destination="@id/studyQuizCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="com.gundrills.views.StatsFragment"
+        android:label="Data" />
+    <fragment
+        android:id="@+id/referencesFragment"
+        android:name="com.gundrills.views.ReferencesFragment"
+        android:label="References" >
+
+
+        <action
+            android:id="@+id/action_referencesFragment_to_pdfFragment"
+            app:destination="@id/pdfFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/studyQuizCardFragment"
+        android:name="com.gundrills.views.StudyQuizCardFragment"
+        android:label="Back"
+        tools:layout="@layout/fragment_studycards" >
+        <action
+            android:id="@+id/action_studyQuizCardFragment_to_pdfFragment"
+            app:destination="@id/pdfFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pdfFragment"
+        android:name="com.gundrills.views.PdfFragment"
+        android:label="Back"
+        tools:layout="@layout/fragment_pdf" />
+
+
+</navigation>

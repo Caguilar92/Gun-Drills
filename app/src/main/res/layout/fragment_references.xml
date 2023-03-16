@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/references_background">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mortars"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintDimensionRatio="9:12"
+        app:layout_constraintEnd_toStartOf="@+id/ranger"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/mortartc_xxxhdpi"
+                app:layout_constraintBottom_toTopOf="@+id/mortar_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/mortar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Mortars"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/moratr_tc_text"
+                app:layout_constraintEnd_toEndOf="@+id/moratr_tc_text"
+                app:layout_constraintStart_toStartOf="@+id/moratr_tc_text" />
+
+            <TextView
+                android:id="@+id/moratr_tc_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="TC 3-22.90"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ranger"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintDimensionRatio="9:12"
+        app:layout_constraintEnd_toEndOf="@+id/fdc"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/fdc"
+        app:layout_constraintTop_toBottomOf="@+id/fdc">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/rangertc_xxxhdpi"
+                app:layout_constraintBottom_toTopOf="@+id/ranger_tc_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/ranger_tc_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="Ranger Handbook"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/ranger_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/ranger_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="TC 3-21.76"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tac_emp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintDimensionRatio="9:12"
+        app:layout_constraintEnd_toEndOf="@+id/mortars"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/mortars"
+        app:layout_constraintTop_toBottomOf="@+id/mortars">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/tac_emptc_xxxhdpi"
+            app:layout_constraintBottom_toTopOf="@+id/tac_emp_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tac_emp_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Tactical Employment Of Mortars"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/tac_emp_tc_text"
+            app:layout_constraintEnd_toEndOf="@+id/tac_emp_tc_text"
+            app:layout_constraintStart_toStartOf="@+id/tac_emp_tc_text" />
+
+        <TextView
+            android:id="@+id/tac_emp_tc_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="TC 3-21.90"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fdc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
+        android:clickable="true"
+        android:elevation="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/mortars"
+        app:layout_constraintDimensionRatio="9:12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mortars"
+        app:layout_constraintTop_toTopOf="@+id/mortars"
+        app:layout_constraintVertical_bias="0.927">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/fdctc_xxxhdpi"
+                app:layout_constraintBottom_toTopOf="@+id/fdc_tc_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/fdc_tc_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Mortar Fire Direction Procedures"
+                android:textColor="@color/black"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/fdc_text"
+                app:layout_constraintEnd_toEndOf="@+id/fdc_text"
+                app:layout_constraintStart_toStartOf="@+id/fdc_text" />
+
+            <TextView
+                android:id="@+id/fdc_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="TC 3-22.91"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

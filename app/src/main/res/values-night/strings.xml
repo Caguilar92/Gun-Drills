@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="large_deflection_average">Large Deflection Average</string>
+    <string name="small_deflection_average">Small Deflection Average</string>
+    <string name="best_small_deflection">Best Small Deflection</string>
+    <string name="best_large_deflection">Best Large Deflection</string>
+</resources>

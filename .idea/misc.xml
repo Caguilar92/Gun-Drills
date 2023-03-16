@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable-hdpi/card_hdpi.xml" value="0.112" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable-ldpi/study_card.xml" value="0.112" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1495" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/arrow_back_48px.xml" value="0.177" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/arrow_forward_48px.xml" value="0.177" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/button.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/button_selected.xml" value="0.13194444444444445" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/button_selector.xml" value="0.18518518518518517" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/button_state.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/buttons.xml" value="0.1712962962962963" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/cardview_bg.xml" value="0.162109375" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/changebuttons.xml" value="0.1712962962962963" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/default_option_button.xml" value="0.15555555555555556" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/ic__0mm_card_icon.xml" value="0.3305" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/ic__0mm_symbol__1_.xml" value="0.162109375" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/ic__20mm_card_icon.xml" value="0.3305" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.162109375" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/ic_baseline_arrow_circle_left_24.xml" value="0.162109375" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/ic_baseline_arrow_circle_right_24.xml" value="0.1" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/ic_baseline_menu_book_24.xml" value="0.1495" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/ic_baseline_picture_as_pdf_24.xml" value="0.1495" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/ic_icon_120mm.xml" value="0.1495" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/ic_icon_60mm.xml" value="0.162109375" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/ic_icon_81mm.xml" value="0.1495" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1495" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/icon_60mm.xml" value="0.158984375" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/icons.xml" value="0.18518518518518517" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/navigation_selector.xml" value="0.1" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/outline_query_stats_24.xml" value="0.1" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/pdf.xml" value="0.12685185185185185" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/quiz_card.xml" value="0.16111111111111112" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/references_background.xml" value="0.1065" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/right_answer.xml" value="0.15555555555555556" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/ripple.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/scrollbar.xml" value="0.1" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/selected_button.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/shadow.xml" value="0.1" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/splash_screen_background.xml" value="0.16" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/splash_screen_icon.xml" value="0.1935" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/timer_button_selector.xml" value="0.1" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/drawable/wrong_answer.xml" value="0.15555555555555556" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/font/fonts.xml" value="0.23020833333333332" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/font/roboto_bold.xml" value="0.1" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/font/roboto_medium.xml" value="0.33" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-h600dp/fragment_timer.xml" value="0.296875" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-h650dp/fragment_timer.xml" value="0.25" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-h700dp/fragment_timer.xml" value="0.2" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-h750dp/fragment_timer.xml" value="0.296875" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-h750dp/timer_fragment.xml" value="0.534375" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-h800dp/timer_fragmenth800.xml" value="0.12631578947368421" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-hdpi/timer_fragment.xml" value="0.48" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-hdpi/timer_fragment_hdpi.xml" value="0.48" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-land-hdpi/timer_fragment.xml" value="0.2953125" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-land-xhdpi/timer_fragment.xml" value="0.34594594594594597" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-land-xxhdpi/timer_fragment.xml" value="0.2453125" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-land/activity_main.xml" value="0.24479166666666666" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-land/fragment_references.xml" value="0.6270270270270271" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-land/fragment_study.xml" value="0.40540540540540543" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-land/fragment_study_home.xml" value="0.28214548126377664" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-land/fragment_studycards.xml" value="0.22" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-land/fragment_timer.xml" value="0.5880208333333333" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-land/references__fragment.xml" value="0.2359375" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-land/references_fragment.xml" value="0.33958333333333335" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-land/timer_fragment.xml" value="0.30104166666666665" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-mdpi/timer_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-small-hdpi/timer_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-small/references__fragment.xml" value="0.25" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-sw240dp-hdpi/timer_fragment.xml" value="0.48" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-sw240dp/timer_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-sw320dp-land/timer_fragment.xml" value="0.2953125" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-sw320dp/timer_fragment.xml" value="0.70875" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-sw360dp/fragment_timer.xml" value="0.1225" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-sw400dp/fragment_timer.xml" value="0.1" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-sw480dp/sw480dp.xml" value="0.18" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-sw480dp/timer_fragment.xml" value="0.15" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-sw600dp/fragment_timer.xml" value="0.15703125" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-xhdpi/fragment_study_home.xml" value="0.33" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-xhdpi/timer_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-xxhdpi/fragment_study_home.xml" value="0.1" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout-xxhdpi/timer_fragment.xml" value="0.16" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/activity_pdfactivity.xml" value="0.129981884057971" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/blank_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/fragment_blank.xml" value="0.17119565217391305" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/fragment_data.xml" value="0.33" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/fragment_nav_host.xml" value="0.1" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/fragment_nav_host2.xml" value="0.1" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/fragment_pdf.xml" value="0.3575" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/fragment_references.xml" value="0.25" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/fragment_study.xml" value="0.25" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/fragment_study_home.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/fragment_study_quiz_card_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/fragment_studycards.xml" value="0.3578125" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/fragment_timer.xml" value="0.1" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/fragment_timer_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/quiz__fragment.xml" value="0.18" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/references__fragment.xml" value="0.22" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/references_fragment.xml" value="0.3" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/study__fragment.xml" value="0.2" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/study_fragment.xml" value="0.24453125" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/layout/timer_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/menu/bottom_navigation.xml" value="0.1" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/menu/nav_menu.xml" value="0.33" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/menu/navigation_menu.xml" value="0.1" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.12685185185185185" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.12685185185185185" />
+        <entry key="..\:/Users/cande/IdeaProjects/GunDrillsApp/app/src/main/res/xml/animation.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_18_PREVIEW" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

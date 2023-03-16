@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Gun Drills</string>
+    <string name="deflection">Deflection</string>
+    <string name="deflectionView">3200</string>
+    <string name="charge">Charge</string>
+    <string name="chargeView">0</string>
+    <string name="elevation">Elevation</string>
+    <string name="elevationView">1100</string>
+    <string name="timer_default">00:00:00</string>
+    <string name="large">Large</string>
+    <string name="small">Small</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="change">Change</string>
+    <string name="refer">Refer</string>
+    <string name="title_activity_pdfactivity">PDFActivity</string>
+    <string name="mortars">TC 3-22.90</string>
+    <string name="fdc">TC 3-22.91</string>
+    <string name="tactical_employment">ATP 3-21.90</string>
+    <string name="_120mm_mortar">120MM MORTAR</string>
+    <string name="save">Save</string>
+    <string name="reference1"><u>TC 3-22.90</u></string>
+    <string name="reference2"><u>TC 3-22.91</u></string>
+    <string name="reference3"><u>ATP 3-21.90</u></string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="large_deflection_average"><u>Large Deflection Average</u></string>
+    <string name="small_deflection_average"><u>Small Deflection Average</u></string>
+    <string name="best_small_deflection"><u>Best Small Deflection</u></string>
+    <string name="best_large_deflection"><u>Best Large Deflection</u></string>
+
+
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarThumbVertical="@drawable/scrollbar"
+    android:fadeScrollbars="false"
+    tools:context=".views.StudyQuizCardFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/studyQuizCardFragment"
+        tools:context=".views.StudyQuizCardFragment">
+
+
+        <TextView
+            android:id="@+id/frontCard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="120dp"
+            android:autoSizeMaxTextSize="24sp"
+            android:autoSizeTextType="uniform"
+            android:background="@color/white"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/blue"
+            android:textSize="32sp"
+            app:layout_constraintDimensionRatio="16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/backCard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="120dp"
+            android:autoSizeMaxTextSize="24sp"
+            android:autoSizeTextType="uniform"
+            android:background="@color/white"
+            android:clickable="true"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/blue"
+            android:textSize="32sp"
+            app:layout_constraintDimensionRatio="16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/rightArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow_forward_48px"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/frontCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/frontCard"
+            app:layout_constraintTop_toTopOf="@+id/frontCard" />
+
+        <TextView
+            android:id="@+id/leftArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow_back_48px"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/frontCard"
+            app:layout_constraintEnd_toStartOf="@+id/frontCard"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/frontCard" />
+
+        <TextView
+            android:id="@+id/questionNumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="question numbers"
+            app:layout_constraintEnd_toStartOf="@+id/rightArrow"
+            app:layout_constraintStart_toEndOf="@+id/leftArrow"
+            app:layout_constraintTop_toBottomOf="@+id/frontCard" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,177 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gundrills.views.TimerFragment"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <Button
+        android:id="@+id/change_button"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/change"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/white" />
+
+    <Button
+        android:id="@+id/refer_deflection_button"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="@string/refer"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/change_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/white" />
+
+    <Button
+        android:id="@+id/large_deflection_button"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/timer_button_selector"
+        android:text="@string/large"
+        android:textColor="@color/timer_button_text_selector"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/refer_deflection_button"
+        app:layout_constraintEnd_toStartOf="@+id/small_deflection_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/small_deflection_button"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/timer_button_selector"
+        android:text="@string/small"
+        android:textColor="@color/timer_button_text_selector"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/refer_deflection_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/large_deflection_button" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/switchCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/elevationView" />
+
+    <TextView
+        android:id="@+id/deflection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deflection"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/deflection_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/deflection_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deflectionView"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/charge"
+        app:layout_constraintEnd_toEndOf="@+id/deflection"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/deflection"
+        app:layout_constraintTop_toBottomOf="@+id/deflection" />
+
+    <TextView
+        android:id="@+id/charge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/charge"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/chargeView"
+        app:layout_constraintEnd_toEndOf="@+id/deflection"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/deflection"
+        app:layout_constraintTop_toBottomOf="@+id/deflection_view" />
+
+    <TextView
+        android:id="@+id/chargeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chargeView"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/elevation"
+        app:layout_constraintEnd_toEndOf="@+id/charge"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/charge"
+        app:layout_constraintTop_toBottomOf="@+id/charge" />
+
+    <TextView
+        android:id="@+id/elevation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/elevation"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/elevationView"
+        app:layout_constraintEnd_toEndOf="@+id/charge"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/charge"
+        app:layout_constraintTop_toBottomOf="@+id/chargeView" />
+
+    <TextView
+        android:id="@+id/elevationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/elevationView"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/chronometer"
+        app:layout_constraintEnd_toEndOf="@+id/elevation"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/elevation"
+        app:layout_constraintTop_toBottomOf="@+id/elevation" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="@string/save"
+        android:textOff="@string/save"
+        android:textOn="@string/save"
+        app:layout_constraintBottom_toTopOf="@+id/large_deflection_button"
+        app:layout_constraintEnd_toEndOf="@+id/small_deflection_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/large_deflection_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
