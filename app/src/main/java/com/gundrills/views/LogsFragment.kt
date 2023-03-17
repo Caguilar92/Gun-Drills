@@ -22,7 +22,7 @@ class StatsFragment : Fragment() {
         private lateinit var bestLargeDeflectionTime:TextView
         private lateinit var bestSmallDeflectionTime:TextView
         private lateinit var clearButton: Button
-        private val DEFAULT_TIME = "00:00.0"
+        private val DEFAULT_TIME = "00:00"
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

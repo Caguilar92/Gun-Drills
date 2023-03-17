@@ -19,9 +19,9 @@ class MainActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-       val splashScreen = installSplashScreen()
+        val splashScreen = installSplashScreen()
         super.onCreate(savedInstanceState)
-       setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main)
         toolbar = findViewById(R.id.topAppBar)
         setSupportActionBar(toolbar)
 
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         val navhostFragment = supportFragmentManager.findFragmentById(R.id.fragment_container_view) as NavHostFragment
         val navController = navhostFragment.findNavController()
         val appBarConfiguration = AppBarConfiguration(setOf(R.id.timerFragment,R.id.statsFragment,R.id.studyFragment,R.id.referencesFragment))
-        setupActionBarWithNavController(navController)//need this one and line below so labels work properly on toolbar
+        setupActionBarWithNavController(navController)//to set up action bar with nav controller in order for labels to work correctly
         toolbar.setupWithNavController(navController,appBarConfiguration)
         bottomNavigationView.setupWithNavController(navController)
 

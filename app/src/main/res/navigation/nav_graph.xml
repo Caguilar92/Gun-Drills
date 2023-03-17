@@ -24,7 +24,7 @@
     <fragment
         android:id="@+id/statsFragment"
         android:name="com.gundrills.views.StatsFragment"
-        android:label="Data" />
+        android:label="Log" />
     <fragment
         android:id="@+id/referencesFragment"
         android:name="com.gundrills.views.ReferencesFragment"
