@@ -1,5 +1,6 @@
 package com.gundrills.view_models
 
+import android.os.SystemClock
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -37,6 +38,7 @@ class TimerViewModel(deflection: Int, charge: Int, elevation: Int, refer: Int, c
     private var timeStopped:String = "null"
 
 
+
     fun getChronometerBase():Long? {
         return chronometerBase
     }
@@ -62,6 +64,7 @@ class TimerViewModel(deflection: Int, charge: Int, elevation: Int, refer: Int, c
 
     fun addLargeTime(time:Long) {
         bestLargeTime.value = minOf(time,bestLargeTime.value!!)
+
         largeDeflectionTimeList.value?.add(time)
         totalLarge?.plus(time)
         largeAverage.value = largeDeflectionTimeList.value?.average()

@@ -28,7 +28,7 @@ class StatsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        return inflater.inflate(R.layout.fragment_data, container, false)
+        return inflater.inflate(R.layout.fragment_logs, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

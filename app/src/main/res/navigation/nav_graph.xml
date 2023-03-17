@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/timerFragment"
-        android:name="com.gundrills.views.TimerFragment"
+        android:name="com.gundrills.views.StopWatchFragment"
         android:label="Stop Watch"
-        tools:layout="@layout/fragment_timer" />
+        tools:layout="@layout/fragment_stopwatch" />
     <fragment
         android:id="@+id/studyFragment"
         android:name="com.gundrills.views.StudyFragment"

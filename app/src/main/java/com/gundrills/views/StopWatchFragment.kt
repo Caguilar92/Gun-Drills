@@ -17,7 +17,7 @@ import com.gundrills.factory.TimerViewModelFactory
 import com.gundrills.view_models.TimerViewModel
 
 
-class TimerFragment : Fragment(), View.OnClickListener {
+class StopWatchFragment : Fragment(), View.OnClickListener {
     private var defaultDeflection: Int = 3200
     private var defaultCharge: Int = 0
     private var defaultRefer: Int = 3200
@@ -30,6 +30,7 @@ class TimerFragment : Fragment(), View.OnClickListener {
     private lateinit var changeButton: Button
     private lateinit var referButton: Button
     private lateinit var switch:SwitchCompat
+
 
     private var start: String = "Start"
     private var stop: String = "Stop"
@@ -50,7 +51,7 @@ class TimerFragment : Fragment(), View.OnClickListener {
 
 
 
-        return inflater.inflate(R.layout.fragment_timer, container, false)
+        return inflater.inflate(R.layout.fragment_stopwatch, container, false)
 
 
     }
@@ -80,6 +81,7 @@ class TimerFragment : Fragment(), View.OnClickListener {
         elevationView = view.findViewById(R.id.elevationView)
         timer = view.findViewById(R.id.chronometer)
         timer.text="00:00"
+
         setButtonOnclickListeners(largeDefButton, smallDefButton, changeButton, referButton)
 
         viewModel.getChangeButtonText().observe(viewLifecycleOwner) {
@@ -146,6 +148,7 @@ class TimerFragment : Fragment(), View.OnClickListener {
                     button as TextView
                     when (button.text) {
                         start -> {
+
                             viewModel.changeButtonText(stop)
                             var base = SystemClock.elapsedRealtime()
                             viewModel.setChronomterBase(base)
@@ -158,7 +161,7 @@ class TimerFragment : Fragment(), View.OnClickListener {
 
                             viewModel.changeButtonText(change)
                             timer.stop()
-                            var time =  SystemClock.elapsedRealtime() - timer.base
+                            var time =  (SystemClock.elapsedRealtime() - timer.base)
                             viewModel.setTimeStopped(timer.text.toString())
                             viewModel.isRunning(false)
 
