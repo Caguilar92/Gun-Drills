@@ -57,8 +57,7 @@ class StatsFragment : Fragment() {
 
         viewModel.bestSmallTime().observe(viewLifecycleOwner) {
             if(it == Long.MAX_VALUE) {
-                var num1 = 7L
-                var num2 = 2L
+
                 bestSmallDeflectionTime.text =  DEFAULT_TIME
             }
             else {

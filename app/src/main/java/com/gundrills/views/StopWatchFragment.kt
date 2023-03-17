@@ -15,41 +15,38 @@ import androidx.lifecycle.ViewModelProvider
 import com.gundrills.R
 import com.gundrills.factory.TimerViewModelFactory
 import com.gundrills.view_models.StopWatchViewModel
-import java.util.concurrent.TimeUnit
 
 
 class StopWatchFragment : Fragment(), View.OnClickListener {
-    private var defaultDeflection: Int = 3200
-    private var defaultCharge: Int = 0
-    private var defaultRefer: Int = 3200
-    private var defaultElevation: Int = 1100
-    private var defaultChangeButtonText: String = "Change"
+
+    private var DEFAULT_DEFLECTION: Int = 3200
+    private var DEFAULT_CHARGE: Int = 0
+    private var DEFAULT_REFER_DEFLECTION: Int = 3200
+    private var DEFAULT_ELEVATION: Int = 1100
 
 
     private lateinit var largeDefButton: Button
     private lateinit var smallDefButton: Button
     private lateinit var changeButton: Button
     private lateinit var referButton: Button
-    private lateinit var switch:SwitchCompat
+    private lateinit var switch: SwitchCompat
 
+    private lateinit var changeButtonText: String
+    private lateinit var startText: String
+    private lateinit var stopText: String
+    private lateinit var changeText: String
+    private lateinit var toastMessage: String
 
-    private var start: String = "Start"
-    private var stop: String = "Stop"
-    private var change: String = "Change"
     private lateinit var timer: Chronometer
-
-
     private lateinit var deflectionView: TextView
     private lateinit var chargeView: TextView
     private lateinit var elevationView: TextView
     private lateinit var viewModel: StopWatchViewModel
 
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-
 
 
         return inflater.inflate(R.layout.fragment_stopwatch, container, false)
@@ -60,18 +57,28 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+
+        changeButtonText = requireActivity().getString(R.string.change)
+        startText = requireActivity().getString(R.string.start)
+        stopText = requireActivity().getString(R.string.stop)
+        changeText = requireActivity().getString(R.string.change)
+        toastMessage = requireActivity().getString(R.string.save)
+
+
         viewModel = ViewModelProvider(
             requireActivity(),
             TimerViewModelFactory(
-                defaultDeflection,
-                defaultCharge,
-                defaultRefer,
-                defaultElevation,
-                defaultChangeButtonText,
+                DEFAULT_DEFLECTION,
+                DEFAULT_CHARGE,
+                DEFAULT_REFER_DEFLECTION,
+                DEFAULT_ELEVATION,
+                changeButtonText,
                 false,
                 true
             )
         ).get("timerViewModel", StopWatchViewModel::class.java)
+
         switch = view.findViewById(R.id.switchCompat)
         largeDefButton = view.findViewById(R.id.large_deflection_button)
         smallDefButton = view.findViewById(R.id.small_deflection_button)
@@ -81,7 +88,9 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
         chargeView = view.findViewById(R.id.chargeView)
         elevationView = view.findViewById(R.id.elevationView)
         timer = view.findViewById(R.id.chronometer)
-        timer.text="00:00"
+        timer.text = requireActivity().getString(R.string.timer_default)
+
+
 
         setButtonOnclickListeners(largeDefButton, smallDefButton, changeButton, referButton)
 
@@ -103,9 +112,9 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
         }
 
         viewModel.getElevation().observe(viewLifecycleOwner) {
-            if(it < 1000) {
+            if (it < 1000) {
                 elevationView.text = "0${it}"
-            } else{
+            } else {
                 elevationView.text = "$it"
             }
 
@@ -122,18 +131,14 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
 
 
 
-        if(viewModel.getChronometerBase() != null) {
+        if (viewModel.getChronometerBase() != null) {
             timer.base = viewModel.getChronometerBase()!!
-            if(viewModel.isRunning()) {
+            if (viewModel.isRunning()) {
                 timer.start()
             } else {
-               timer.text = viewModel.getTimedStopped()
+                timer.text = viewModel.getTimedStopped()
             }
         }
-
-
-
-
 
 
     }
@@ -147,9 +152,9 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
                 R.id.change_button -> {
                     button as TextView
                     when (button.text) {
-                        start -> {
+                        startText -> {
 
-                            viewModel.changeButtonText(stop)
+                            viewModel.changeButtonText(stopText)
                             var base = SystemClock.elapsedRealtime()
                             viewModel.setChronomterBase(base)
                             timer.base = base
@@ -157,17 +162,18 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
                             timer.start()
 
                         }
-                        stop -> {
+                        stopText -> {
 
-                            viewModel.changeButtonText(change)
+                            viewModel.changeButtonText(changeText)
                             timer.stop()
-                            var time =  (SystemClock.elapsedRealtime() - timer.base)
+                            var time = (SystemClock.elapsedRealtime() - timer.base)
                             viewModel.setTimeStopped(timer.text.toString())
                             viewModel.isRunning(false)
 
-                            if(switch.isChecked) {
-                                Toast.makeText(requireActivity(),"saved",Toast.LENGTH_SHORT).show()
-                                if(largeDefButton.isSelected) {
+                            if (switch.isChecked) {
+                                Toast.makeText(requireActivity(), toastMessage, Toast.LENGTH_SHORT)
+                                    .show()
+                                if (largeDefButton.isSelected) {
                                     viewModel.addLargeTime(time)
                                 } else {
                                     viewModel.addSmallTime(time)
@@ -175,17 +181,13 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
                             }
 
 
-
-
-
-
                         }
 
-                        change -> {
-                            viewModel.changeButtonText(start)
+                        changeText -> {
+                            viewModel.changeButtonText(startText)
                             viewModel.changeDeflection()
                             viewModel.changeCharge()
-                            timer.text = "00:00"
+                            timer.text = requireActivity().getString(R.string.timer_default)
 
 
                         }
@@ -195,7 +197,7 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
                 R.id.refer_deflection_button -> {
                     viewModel.changeRefer()
                     viewModel.changeCharge()
-                    viewModel.setElevation(1100)
+                    viewModel.setElevation(DEFAULT_ELEVATION)
                 }
 
                 R.id.large_deflection_button -> {
@@ -226,8 +228,6 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
         changeButton.setOnClickListener(this)
         referButton.setOnClickListener(this)
     }
-
-
 
 
 }

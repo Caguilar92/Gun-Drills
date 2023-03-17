@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        toolbar = findViewById(R.id.topAppBar)
-        setSupportActionBar(toolbar)
+            toolbar = findViewById(R.id.topAppBar)
+            setSupportActionBar(toolbar)
 
 
        bottomNavigationView = findViewById(R.id.bottomNavigationView)
