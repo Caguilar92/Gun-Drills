@@ -14,7 +14,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.gundrills.R
 import com.gundrills.factory.TimerViewModelFactory
-import com.gundrills.view_models.TimerViewModel
+import com.gundrills.view_models.StopWatchViewModel
+import java.util.concurrent.TimeUnit
 
 
 class StopWatchFragment : Fragment(), View.OnClickListener {
@@ -41,7 +42,7 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
     private lateinit var deflectionView: TextView
     private lateinit var chargeView: TextView
     private lateinit var elevationView: TextView
-    private lateinit var viewModel: TimerViewModel
+    private lateinit var viewModel: StopWatchViewModel
 
 
 
@@ -70,7 +71,7 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
                 false,
                 true
             )
-        ).get("timerViewModel", TimerViewModel::class.java)
+        ).get("timerViewModel", StopWatchViewModel::class.java)
         switch = view.findViewById(R.id.switchCompat)
         largeDefButton = view.findViewById(R.id.large_deflection_button)
         smallDefButton = view.findViewById(R.id.small_deflection_button)
@@ -129,7 +130,6 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
                timer.text = viewModel.getTimedStopped()
             }
         }
-
 
 
 

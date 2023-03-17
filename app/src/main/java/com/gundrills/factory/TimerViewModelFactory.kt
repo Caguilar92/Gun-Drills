@@ -2,7 +2,7 @@ package com.gundrills.factory
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.gundrills.view_models.TimerViewModel
+import com.gundrills.view_models.StopWatchViewModel
 
 class TimerViewModelFactory(
         private var defaultDeflection:Int,
@@ -13,8 +13,8 @@ class TimerViewModelFactory(
         private var largeIsSelected:Boolean,
         private var smallIsSelected:Boolean) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        if (modelClass.isAssignableFrom(TimerViewModel::class.java)) {
-            return TimerViewModel(
+        if (modelClass.isAssignableFrom(StopWatchViewModel::class.java)) {
+            return StopWatchViewModel(
                 defaultDeflection,
                 defaultCharge,
                 defaultElevation,

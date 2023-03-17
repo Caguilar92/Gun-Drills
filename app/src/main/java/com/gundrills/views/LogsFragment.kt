@@ -10,12 +10,13 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.gundrills.R
-import com.gundrills.view_models.TimerViewModel
+import com.gundrills.view_models.StopWatchViewModel
+import kotlin.math.floor
 
 
 class StatsFragment : Fragment() {
 
-        private  lateinit var viewModel:TimerViewModel
+        private  lateinit var viewModel:StopWatchViewModel
         private lateinit var largeDeflectionAverageTime:TextView
         private lateinit var smallDeflectionAverageTime:TextView
         private lateinit var bestLargeDeflectionTime:TextView
@@ -34,7 +35,7 @@ class StatsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel = ViewModelProvider(requireActivity()).get("timerViewModel",TimerViewModel::class.java)
+        viewModel = ViewModelProvider(requireActivity()).get("timerViewModel",StopWatchViewModel::class.java)
         largeDeflectionAverageTime = view.findViewById(R.id.largeDeflectionAvgTime)
         smallDeflectionAverageTime = view.findViewById(R.id.smallDeflectionAvgTime)
         bestLargeDeflectionTime = view.findViewById(R.id.bestLargeDeflectionTime)
@@ -56,7 +57,9 @@ class StatsFragment : Fragment() {
 
         viewModel.bestSmallTime().observe(viewLifecycleOwner) {
             if(it == Long.MAX_VALUE) {
-                bestSmallDeflectionTime.text = DEFAULT_TIME
+                var num1 = 7L
+                var num2 = 2L
+                bestSmallDeflectionTime.text =  DEFAULT_TIME
             }
             else {
                 bestSmallDeflectionTime.text = timeToString(it)
@@ -77,6 +80,7 @@ class StatsFragment : Fragment() {
                 smallDeflectionAverageTime.text = DEFAULT_TIME
             }
             else {
+
                 smallDeflectionAverageTime.text = avgTimeToString(it)
             }
         }
@@ -110,9 +114,9 @@ class StatsFragment : Fragment() {
 
     private fun avgTimeToString(time:Double) : String {
         var minutes = ( (time/1000) /60).toInt()
-        var seconds = ( (time/1000) % 60)
+        var seconds = ( (time/1000) % 60).toInt()
         Log.v("seconds",seconds.toString())
-        var stringMinutes = String.format("%02d:%02.2f", minutes,seconds)
+        var stringMinutes = String.format("%02d:%02d", minutes,seconds)
 
 
         return stringMinutes

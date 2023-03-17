@@ -1,12 +1,14 @@
 package com.gundrills.view_models
 
-import android.os.SystemClock
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import timerx.Stopwatch
+import timerx.StopwatchBuilder
+import java.util.concurrent.TimeUnit
 import kotlin.random.Random
 
-class TimerViewModel(deflection: Int, charge: Int, elevation: Int, refer: Int, changButtonText: String,largeIsSelected:Boolean,smallIsSelected:Boolean) : ViewModel() {
+class StopWatchViewModel(deflection: Int, charge: Int, elevation: Int, refer: Int, changButtonText: String, largeIsSelected:Boolean, smallIsSelected:Boolean) : ViewModel() {
 
     private var deflection: MutableLiveData<Int> = MutableLiveData(deflection)
 
@@ -36,8 +38,6 @@ class TimerViewModel(deflection: Int, charge: Int, elevation: Int, refer: Int, c
     private var chronometerBase:Long? = null
     private var isRunning = false
     private var timeStopped:String = "null"
-
-
 
     fun getChronometerBase():Long? {
         return chronometerBase
