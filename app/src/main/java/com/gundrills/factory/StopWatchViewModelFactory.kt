@@ -24,6 +24,6 @@ class StopWatchViewModelFactory(
                 smallIsSelected
             ) as T
         }
-        throw IllegalArgumentException("StudyViewModel Class Not Found")
+        throw IllegalArgumentException("StopWatchViewModel Class Not Found")
     }
 }
