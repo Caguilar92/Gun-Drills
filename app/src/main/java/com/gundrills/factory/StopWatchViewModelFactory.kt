@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.gundrills.view_models.StopWatchViewModel
 
-class TimerViewModelFactory(
+class StopWatchViewModelFactory(
         private var defaultDeflection:Int,
         private var defaultCharge:Int,
         private var defaultRefer:Int,

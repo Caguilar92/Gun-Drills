@@ -13,16 +13,23 @@ import androidx.appcompat.widget.SwitchCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.gundrills.R
-import com.gundrills.factory.TimerViewModelFactory
+import com.gundrills.factory.StopWatchViewModelFactory
 import com.gundrills.view_models.StopWatchViewModel
 
 
 class StopWatchFragment : Fragment(), View.OnClickListener {
 
-    private var DEFAULT_DEFLECTION: Int = 3200
-    private var DEFAULT_CHARGE: Int = 0
+    private var DEFAULT_DEFLECTION: Int = 3200//Initial deflection to display on app start up
+    private var DEFAULT_CHARGE: Int = 0//Initial charge to display on app start up
+
+    /*Initial refer deflection to display on app start up. The changes in deflection are based off of what the current refer deflection is.
+    * Refer Deflection is the base deflection that changes are based off of.
+    * Example: if refer is 2800, than any change will be either added or subtracted off of 2800, depending on the bounds of the function.
+      2800 + 60 = 2860 (new deflection to display) 2800 -60 = 2740(new deflection to display).
+      fuction is the the StopWatchViewModelClass*/
     private var DEFAULT_REFER_DEFLECTION: Int = 3200
-    private var DEFAULT_ELEVATION: Int = 1100
+
+    private var DEFAULT_ELEVATION: Int = 1100//default elevation to display
 
 
     private lateinit var largeDefButton: Button
@@ -36,7 +43,8 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
     private lateinit var stopText: String
     private lateinit var changeText: String
     private lateinit var toastMessage: String
-    private lateinit var existingTimerViewModelKey:String
+
+    private lateinit var viewModelKey:String
 
     private lateinit var timer: Chronometer
     private lateinit var deflectionView: TextView
@@ -59,18 +67,22 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
         super.onViewCreated(view, savedInstanceState)
 
 
-
+        /*
+        reference string in string.xml file. Fragment needs to be attached to activity before getString() is called in order
+        for function to work properly so requireActivity() is required in onViewCreated();
+         */
         changeButtonText = requireActivity().getString(R.string.change)
         startText = requireActivity().getString(R.string.start)
         stopText = requireActivity().getString(R.string.stop)
         changeText = requireActivity().getString(R.string.change)
         toastMessage = requireActivity().getString(R.string.save)
-        existingTimerViewModelKey = requireActivity().getString(R.string.timerViewModel)
+        viewModelKey = requireActivity().getString(R.string.timerViewModel)
 
 
+        /* The ViewModelProvider creates a viewModel given given a factory and stores it in a viewmodel store.*/
         viewModel = ViewModelProvider(
-            requireActivity(),
-            TimerViewModelFactory(
+            requireActivity(),//lifecycle owner is the activity that it is running in. viewmodel data will live as long as the scope of the activity.
+            StopWatchViewModelFactory(//factory create a viewmodel that an be instantiated using the given constructor arguments.
                 DEFAULT_DEFLECTION,
                 DEFAULT_CHARGE,
                 DEFAULT_REFER_DEFLECTION,
@@ -79,7 +91,7 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
                 false,
                 true
             )
-        ).get(existingTimerViewModelKey, StopWatchViewModel::class.java)
+        ).get(viewModelKey, StopWatchViewModel::class.java)//key value pair used to reference the view model from the viewmodel store;
 
         switch = view.findViewById(R.id.switchCompat)
         largeDefButton = view.findViewById(R.id.large_deflection_button)
@@ -132,7 +144,9 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
         }
 
 
-
+        /*
+        ensures chronometers maintains is current state upon navigation or configuration change.
+        */
         if (viewModel.getChronometerBase() != null) {
             timer.base = viewModel.getChronometerBase()!!
             if (viewModel.isRunning()) {
