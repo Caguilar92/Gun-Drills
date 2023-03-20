@@ -36,6 +36,7 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
     private lateinit var stopText: String
     private lateinit var changeText: String
     private lateinit var toastMessage: String
+    private lateinit var existingTimerViewModelKey:String
 
     private lateinit var timer: Chronometer
     private lateinit var deflectionView: TextView
@@ -64,6 +65,7 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
         stopText = requireActivity().getString(R.string.stop)
         changeText = requireActivity().getString(R.string.change)
         toastMessage = requireActivity().getString(R.string.save)
+        existingTimerViewModelKey = requireActivity().getString(R.string.timerViewModel)
 
 
         viewModel = ViewModelProvider(
@@ -77,7 +79,7 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
                 false,
                 true
             )
-        ).get("timerViewModel", StopWatchViewModel::class.java)
+        ).get(existingTimerViewModelKey, StopWatchViewModel::class.java)
 
         switch = view.findViewById(R.id.switchCompat)
         largeDefButton = view.findViewById(R.id.large_deflection_button)
