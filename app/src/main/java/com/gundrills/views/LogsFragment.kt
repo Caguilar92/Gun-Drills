@@ -35,7 +35,7 @@ class StatsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel = ViewModelProvider(requireActivity()).get("timerViewModel",StopWatchViewModel::class.java)
+        viewModel = ViewModelProvider(requireActivity()).get("stopWatchViewModel",StopWatchViewModel::class.java)
         largeDeflectionAverageTime = view.findViewById(R.id.largeDeflectionAvgTime)
         smallDeflectionAverageTime = view.findViewById(R.id.smallDeflectionAvgTime)
         bestLargeDeflectionTime = view.findViewById(R.id.bestLargeDeflectionTime)

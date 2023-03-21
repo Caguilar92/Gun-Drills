@@ -76,7 +76,7 @@ class StopWatchFragment : Fragment(), View.OnClickListener {
         stopText = requireActivity().getString(R.string.stop)
         changeText = requireActivity().getString(R.string.change)
         toastMessage = requireActivity().getString(R.string.save)
-        viewModelKey = requireActivity().getString(R.string.timerViewModel)
+        viewModelKey = requireActivity().getString(R.string.stopWatchViewModel)
 
 
         /* The ViewModelProvider creates a viewModel given given a factory and stores it in a viewmodel store.*/
