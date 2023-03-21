@@ -193,37 +193,38 @@ class StudyQuizCardFragment : Fragment(), View.OnClickListener {
     }
 
     private fun slideLeft() {
+        var duration = 500L
         if (cardFront) {
             YoYo.with(Techniques.SlideOutLeft)
-                .duration(500)
+                .duration(duration)
                 .playOn(frontCard)
 
             YoYo.with(Techniques.SlideInRight)
-                .duration(500)
+                .duration(duration)
                 .playOn(frontCard)
 
             YoYo.with(Techniques.SlideOutLeft)
-                .duration(500)
+                .duration(duration)
                 .playOn(backCard)
 
             YoYo.with(Techniques.SlideInRight)
-                .duration(500)
+                .duration(duration)
                 .playOn(backCard)
         } else {
             YoYo.with(Techniques.SlideOutLeft)
-                .duration(500)
+                .duration(duration)
                 .playOn(backCard)
 
             YoYo.with(Techniques.SlideInRight)
-                .duration(500)
+                .duration(duration)
                 .playOn(backCard)
 
             YoYo.with(Techniques.SlideOutLeft)
-                .duration(500)
+                .duration(duration)
                 .playOn(frontCard)
 
             YoYo.with(Techniques.SlideInRight)
-                .duration(500)
+                .duration(duration)
                 .playOn(frontCard)
 
             flipToBack(backCard)
@@ -239,39 +240,40 @@ class StudyQuizCardFragment : Fragment(), View.OnClickListener {
     }
 
     private fun slideRight() {
+        var duration = 500L
         if (cardFront) {
             YoYo.with(Techniques.SlideOutRight)
-                .duration(500)
+                .duration(duration)
                 .playOn(frontCard)
 
             YoYo.with(Techniques.SlideInLeft)
-                .duration(500)
+                .duration(duration)
                 .playOn(frontCard)
 
             YoYo.with(Techniques.SlideOutRight)
-                .duration(500)
+                .duration(duration)
                 .playOn(backCard)
 
             YoYo.with(Techniques.SlideInLeft)
-                .duration(500)
+                .duration(duration)
                 .playOn(backCard)
         } else {
             YoYo.with(Techniques.SlideOutRight)
-                .duration(500)
+                .duration(duration)
                 .playOn(backCard)
 
 
             YoYo.with(Techniques.SlideInLeft)
-                .duration(500)
+                .duration(duration)
                 .playOn(backCard)
 
             YoYo.with(Techniques.SlideOutRight)
-                .duration(500)
+                .duration(duration)
                 .playOn(frontCard)
 
 
             YoYo.with(Techniques.SlideInLeft)
-                .duration(500)
+                .duration(duration)
                 .playOn(frontCard)
 
             flipToBack(backCard)
