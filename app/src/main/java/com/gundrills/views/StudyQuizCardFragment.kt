@@ -96,7 +96,8 @@ class StudyQuizCardFragment : Fragment(), View.OnClickListener {
                     var bundle = Bundle()
                     var pdfKey = "pdf"
                     var pageNumberKey = "page"
-
+                    /* calls the reference method and passess the object(question) reference as parameter and return the appropriate string in order
+                    * to pass into bundle, so the pdf fragment can extract it and populate the correct data. */
                     when(reference(it.reference)) {
                         getString(R.string.reference1) -> {
                             bundle.putString(pdfKey,"Mortars")
