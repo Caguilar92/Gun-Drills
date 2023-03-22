@@ -45,6 +45,13 @@ class StudyFragment : Fragment(),View.OnClickListener {
 
     }
 
+    /*
+    if value is 60, expected flash card questions should be for the 60mm mortar.
+    if value is 81, expected flash card questions should be for the 60mm mortar.
+   if value is 120, expected flash card questions should be for the 60mm mortar.
+
+
+     */
 
     override fun onClick(view: View?) {
 
