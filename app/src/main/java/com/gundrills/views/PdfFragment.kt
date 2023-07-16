@@ -55,6 +55,7 @@ class PdfFragment : Fragment() {
                         loadPage("tac_emply_mrtrs.pdf",page)
                     }
                 }
+                //pdf is missing must be downloaded and imported into the assets folder. should work once imported
                 "Ranger" -> {
                     if(page != null) {
                         loadPage("Ranger.pdf",page)
